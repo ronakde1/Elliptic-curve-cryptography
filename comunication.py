@@ -1,6 +1,3 @@
-import matplotlib.pyplot as plt 
-import numpy as np
-
 prime = 97
 a = -5
 b = 5
@@ -142,34 +139,4 @@ else:
     with open('transfer.txt', 'w') as file:
         for number in transfer_array:
             file.write(f"{number}\n")
-
-
-
-"""
-    numbers = [0,-1,-1]
-    with open('personA.txt', 'w') as file:
-        for number in numbers:
-            file.write(f"{number}\n")
-
-"""
 print(" ------------------")
-'''
-#A
-Generator = 7
-initial = (-1,-1)
-privatekey1 = 5
-point_multiplication(Generator,initial,privatekey1)
-
-#B
-publickey1 = (92,14)
-privatekey2 = 14
-point_multiplication(Generator,publickey1,privatekey2)
-
-#B
-initial = (-1,-1)
-point_multiplication(Generator,initial,privatekey2)
-
-#A
-publickey2 = (61,63)
-point_multiplication(Generator,publickey2,privatekey1)
-'''
